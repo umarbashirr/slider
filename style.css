@@ -11,6 +11,13 @@ body {
   letter-spacing: 1px;
 }
 
+p,
+h1,
+a {
+  margin: 0;
+  padding: 0;
+}
+
 .slider-container {
   margin: auto;
   min-width: 300px;
@@ -32,6 +39,16 @@ body {
   background-repeat: no-repeat;
   display: none;
   text-align: center;
+  animation: fade 2s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .slide.active {
@@ -50,11 +67,38 @@ body {
 
 .slide-content .title {
   font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fade-down 3s linear;
+}
+
+@keyframes fade-down {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .slide-content .desc {
   line-height: 1.5;
   font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  animation: fade-right 3s linear;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 .slide-content .slider-btn {
@@ -63,6 +107,18 @@ body {
   color: #fff;
   border: 1px solid #fff;
   display: inline-block;
+  animation: fade-up 3s linear;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .slide::after {

@@ -54,4 +54,4 @@ function changeIndicator() {
 
 // Autoplay Function
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 8000);
