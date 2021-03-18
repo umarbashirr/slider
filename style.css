@@ -116,3 +116,27 @@ body {
 .bar.active {
   opacity: 1;
 }
+
+@media screen and (max-width: 560px) {
+  .slide-content .title {
+    font-size: 1.8rem;
+  }
+
+  .slide-content .desc {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+
+  .slide-content .slider-btn {
+    padding: 0.4rem 1rem;
+  }
+
+  .next,
+  .prev {
+    font-size: 1.5rem;
+  }
+
+  .bar {
+    width: 25px;
+  }
+}
