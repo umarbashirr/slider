@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <div
+          class="slide active"
+          style="background: url(https://source.unsplash.com/random/800x800)"
+        >
+          <div class="slide-content">
+            <h1 class="title">Slider No. 1</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              beatae explicabo facere ullam maiores laboriosam.
+            </p>
+            <a href="#" class="slider-btn">Learn More</a>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="background: url(https://source.unsplash.com/random/800x801)"
+        >
+          <div class="slide-content">
+            <h1 class="title">Slider No. 2</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              beatae explicabo facere ullam maiores laboriosam.
+            </p>
+            <a href="#" class="slider-btn">Learn More</a>
+          </div>
+        </div>
+        <div
+          class="slide"
+          style="background: url(https://source.unsplash.com/random/800x802)"
+        >
+          <div class="slide-content">
+            <h1 class="title">Slider No. 3</h1>
+            <p class="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              beatae explicabo facere ullam maiores laboriosam.
+            </p>
+            <a href="#" class="slider-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button type="button" class="prev" id="prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button type="button" class="next" id="next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Indicators -->
+
+      <div class="indicator">
+        <div class="bar active"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
